@@ -15,7 +15,7 @@ export async function callApi(id, endpoint) {
 
 export function getEndpointByService(service, userId) {
     switch (service) {
-      case "activities":
+      case "activity":
         return `user/${userId}/performance`;
   
       case "average-sessions":

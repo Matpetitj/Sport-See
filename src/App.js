@@ -1,4 +1,4 @@
-import './Utils/Style-page/app.scss';
+import './Utils/Style-page/_app.scss';
 import React from 'react';
 // import {Route, Routes} from 'react-router-dom';
 
