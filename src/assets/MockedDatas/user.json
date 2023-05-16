@@ -50,7 +50,7 @@
                     }
                 ]
             },
-            "averageSession": [
+            "average-sessions": [
                 {
                     "day": 1,
                     "sessionLength": 30
@@ -80,7 +80,7 @@
                     "sessionLength": 50
                 }
             ],
-            "sessions": [
+            "activity": [
                 {
                     "day": "2020-07-01",
                     "kilogram": 70,
@@ -134,7 +134,7 @@
                 "carbohydrateCount": 290,
                 "lipidCount": 50
             },
-            "averageSession": [
+            "average-sessions": [
                 {
                     "day": 1,
                     "sessionLength": 30
@@ -201,7 +201,7 @@
                 ]
             },
 
-            "sessions": [
+            "activity": [
                 {
                     "day": "2020-07-01",
                     "kilogram": 80,

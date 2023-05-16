@@ -1,0 +1,23 @@
+@import "../../Utils/Style-settings/mixins";
+@import "../../Utils/Style-settings/variables";
+
+.topbar {
+    display: flex;
+    width: 100%;
+    background-color: $primary-color;
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+        &__svg{
+            color: $secondary-color;
+        }
+        &__title{
+            color: $secondary-color;
+        }
+    }
+}

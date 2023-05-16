@@ -1,0 +1,14 @@
+@import "../../Utils/Style-settings/mixins";
+@import "../../Utils/Style-settings/variables";
+
+.navigation {
+    width: 100%;
+    &__list {
+        display: flex;
+        list-style-type: none;
+        &__li{
+            margin-left: 6em;
+            color: $forth-color;
+        }
+    }
+}
