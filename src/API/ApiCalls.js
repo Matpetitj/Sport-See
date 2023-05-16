@@ -1,4 +1,4 @@
-import userDatas from "../MockedDatas/user.json"
+import userDatas from "../assets/MockedDatas/user.json"
 
 export function callApi(id, endpoint) {
   fetch(`http://localhost:3000/user/${id}/${endpoint}`)
