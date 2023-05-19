@@ -15,10 +15,12 @@ export default function LeftBar() {
     <div className="leftbar">
       <div className="leftbar__container">
         <div className="leftbar__icon">
-          <img className="leftbar__icon__fw" src={personSat} alt="person sat" />
-          <span className="leftbar__icon__fw">{personSwimming}</span>
-          <span className="leftbar__icon__fw">{personBiking}</span>
-          <span className="leftbar__icon__fw">{dumbbell}</span>
+          <span className='leftbar__icon__fw'>
+            <img className="sat" src={personSat} alt="person sat" />
+          </span>
+          <span className="leftbar__icon__fw swimming">{personSwimming}</span>
+          <span className="leftbar__icon__fw biking">{personBiking}</span>
+          <span className="leftbar__icon__fw dumbbell">{dumbbell}</span>
         </div>
         <span className="leftbar__text">Copiryght, SportSee 2020</span>
       </div>
