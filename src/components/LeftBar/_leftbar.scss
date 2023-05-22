@@ -2,32 +2,32 @@
 @import "../../Utils/Style-settings/variables";
 
 .leftbar {
-    height: 100vh;
+    height: 100%;
     width: 117px;
     background-color: $primary-color;
-    &__container {
+    display: flex;
+    flex-direction: column;
+    .leftbar__icon {
         display: flex;
         flex-direction: column;
-        .leftbar__icon {
+        align-items: center;
+        justify-content: center;
+        margin-top: 140px;
+        &__fw{
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            &__fw{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 64px;
-                height: 64px;
-                color: $secondary-color;
-                background-color: $tertiary-color;
-                border-radius: 6px;
-                font-size: 32px;
-            }
-            .sat {
-                width: 32px;
-                height: 32px;
-            }
+            margin-bottom: 10px;
+            width: 64px;
+            height: 64px;
+            color: $secondary-color;
+            background-color: $tertiary-color;
+            border-radius: 6px;
+            font-size: 32px;
+        }
+        .sat {
+            width: 32px;
+            height: 32px;
         }
     }
     &__text {
@@ -37,5 +37,13 @@
         color: $tertiary-color;
         transform: rotate(180deg);
         writing-mode: vertical-lr;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .leftbar {
+        height: 90vh;
     }
 }
