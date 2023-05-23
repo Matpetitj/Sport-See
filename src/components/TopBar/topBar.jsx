@@ -1,5 +1,5 @@
 import React from 'react'
-import './_topbar.scss'
+import './_topbar.scoped.scss'
 import Navigation from '../Navigation/Navigation'
 import logo from '../../assets/Images/logo.svg'
 

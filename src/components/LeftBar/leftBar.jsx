@@ -1,5 +1,5 @@
 import React from 'react'
-import './_leftbar.scss'
+import './_leftbar.scoped.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonBiking } from '@fortawesome/free-solid-svg-icons'
 import { faPersonSwimming } from '@fortawesome/free-solid-svg-icons'

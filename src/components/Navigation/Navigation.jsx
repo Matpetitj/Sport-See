@@ -1,5 +1,5 @@
 import React from 'react'
-import './_navigation.scss'
+import './_navigation.scoped.scss'
 
 export default function Navigation() {
   return (

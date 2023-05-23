@@ -1,29 +1,9 @@
 import userDatas from "../assets/MockedDatas/user.json"
 
-// export function callApi(id, endpoint) {
-//   return fetch(`http://localhost:3000/user/${id}/${endpoint}`)
-//     .then(res => {
-//       console.log(res);
-//       if (res.ok) {
-//         return res.json();
-//       } else {
-//         throw new Error(
-//           'Error! An error occurred in the fetch method',
-//           res.status
-//         );
-//       }
-//     })
-//     .catch(error => {
-//       console.error(error);
-//       alert(`Une erreur s'est produite. Veuillez réessayer.`);
-//       // logService.logError(error);
-//     });
-// }
-
 // Fonction callApi utilisant simulateEndpoint
-export function callApi(userId, endpoint) {
+export function callApi(id, endpoint) {
   try {
-    const response = simulateEndpoint(userId, endpoint);
+    const response = simulateEndpoint(id, endpoint);
     return Promise.resolve(response);
   } catch (error) {
     console.error(error);
@@ -31,12 +11,11 @@ export function callApi(userId, endpoint) {
   }
 }
 // Fonction pour simuler les endpoints
-function simulateEndpoint(userId, endpoint) {
-  const userData = userDatas.find(data => data.data.id === userId);
+export function simulateEndpoint(id, endpoint) {
+  const userData = userDatas.find(data => data.data.id === id);
   if (!userData) {
     throw new Error('User not found');
   }
-
   switch (endpoint) {
     case '':
       return userData.data;
