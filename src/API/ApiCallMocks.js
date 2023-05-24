@@ -2,14 +2,15 @@ import userDatas from "../assets/MockedDatas/user.json"
 
 // Fonction callApi utilisant simulateEndpoint
 export function callApi(id, endpoint) {
-  try {
-    const response = simulateEndpoint(id, endpoint);
+  const response = simulateEndpoint(id, endpoint);
+  if (response instanceof Error) {
+    console.error(response);
+    return Promise.reject(response);
+  } else {
     return Promise.resolve(response);
-  } catch (error) {
-    console.error(error);
-    return Promise.reject(error);
   }
 }
+
 // Fonction pour simuler les endpoints
 export function simulateEndpoint(id, endpoint) {
   const userData = userDatas.find(data => data.data.id === id);
@@ -33,5 +34,3 @@ export function simulateEndpoint(id, endpoint) {
       throw new Error('Endpoint not found');
   }
 }
-
-

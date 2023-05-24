@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { simulateEndpoint, callApi } from '../../API/ApiCallMocks'
+// import '../../assets/MockedDatas/user.json'
 // import Error from '../Error/Error'
 
 import './_userDashBoard.scoped.scss'
